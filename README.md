@@ -1,0 +1,2 @@
+# fancy
+A fancy dashboard
