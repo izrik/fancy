@@ -1,0 +1,15 @@
+{
+  "sources": [
+    {
+      "name": "Public Github",
+      "type": "github_notifications",
+      "token": "123456789abcdef0123456789abcdef012345678"
+    },
+    {
+      "name": "Enterprise Github",
+      "type": "github_notifications",
+      "token": "123456789abcdef0123456789abcdef012345678",
+      "url": "https://github.example.com/api/v3/notifications"
+    }
+  ]
+}
