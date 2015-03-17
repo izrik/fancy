@@ -6,11 +6,32 @@
 </head>
 <body>
 
-<ul>
+<table>
+    <tr>
+        <td>id</td>
+        <td>last_read_at</td>
+        <td>reason</td>
+        <td>repository.full_name</td>
+        <td>subject.title</td>
+        <td>subscription_url</td>
+        <td>unread</td>
+        <td>updated_at</td>
+        <td>url</td>
+    </tr>
     {% for item in items %}
-        <li>{{item.name}} --> {{item.value}}</li>
+    <tr>
+        <td>{{item['id']}}</td>
+        <td>{{item['last_read_at']}}</td>
+        <td>{{item['reason']}}</td>
+        <td>{{item['repository']['full_name']}}</td>
+        <td>{{item['subject']['title']}}</td>
+        <td>{{item['subscription_url']}}</td>
+        <td>{{item['unread']}}</td>
+        <td>{{item['updated_at']}}</td>
+        <td>{{item['url']}}</td>
+    </tr>
     {% endfor %}
-</ul>
+</table>
 
 </body>
 </html>
